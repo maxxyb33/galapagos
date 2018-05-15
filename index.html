@@ -659,7 +659,9 @@
         }),
 		},
         arrow1: {
-		    layer: L.geoJson.ajax("assets/arrow1.geoJson"),
+		    layer: L.geoJson.ajax("assets/arrow1.geoJson", {
+                color: 'blue'
+            }),
         },
         arrow2: {
             layer: L.geoJson.ajax("assets/arrow2.geoJson"),
