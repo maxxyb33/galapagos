@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Boath Galapagos Trip</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--meta data for sharing links on Facebook-->
+	<meta property="og:title" content="Boath Galapagos Trip"/>
+	<meta property="og:description" content="The Boaths took a trip..."/>
+	<meta property="og:image" content="img/social.png"/>
+
+	<!--add required stylesheets-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!--leaflet css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+
+
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/favbird.ico" type="image/x-icon">
+
+
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Pompiere|Cairo|Dancing+Script|Pacifico" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/storymap.2.4.css">
+
+
+
+    <!--add required libraries-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+	<!--jquery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!--boostrap-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"/>
+    <!-- Add the Leaflet JavaScript library -->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <!--leaflet.ajax for asynchronously adding geojson data-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+	<!--story map plugin-->
+	<script src="js/storymap.2.4.js"></script>
+
+
+</head>
+<body>
+
+<div id="storymap" class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 storymap-story">  <!--push to the right??-->
+            <section data-scene="overview" data-background="assets/galaplowTrim.mp4">
+				<div class="fullscreen text-center">
+                    <h1 class="display-4 d-flex justify-content-center">The Boaths <br> Do <br> Galápagos</h1>
+
+
+					<small class="d-flex justify-content-center" style="font-family: Cairo,sans-serif; color: rgba(255,255,255,0.95)">Quito (ECU) | Galapagos (ECU) | Cartegena (COL) | Medellin (COL)
+					</small>
+				</div>
+			</section>
+			<section data-scene="quito">
+				<h2>¡Hola, Quito!</h2>
+                <p>Quito, the capital city of Ecuador, lies at an elevation of 9,350 ft (2,850 metres), making it the second-highest capital in the world.
+                    Quito is also the world's only capital to be directly menaced by an active volcano (Pichincha).</p>
+                    <img src="img/q%20hotel2.png" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Hotel Patio Andaluz">
+                    <img src="img/q%20hotel1.png" class="img-responsive img-thumbnail" alt="responsive image" alt-text="Hotel Patio Andaluz">
+				<small> 2 nights at the <a href="http://www.hotelpatioandaluz.com/en-gb" target="_blank">Patio Andaluz Hotel</a></small>
+			</section>
+
+            <section data-scene="quitotour">
+                <h2>Quito</h2>
+                <p>A guided walking tour through the colonial streets of Quito began at Independence Plaza, followed by seeing the changing of the guards at the Government Palace.
+                    Next, we visited the gold-adorned La Compañia Church, deep in Christmas-time celebration.  We snapped some great pics of colonial and modern Quito from Panecillo Overlook.
+                    After an empañada lunch, we drove a short ways to "Middle Earth" -- the Equator -- where we performed several experiments unique to 0 degrees latitude, such as balancing an egg atop a nail...
+                    I can't remember if Zoe got it to stay... what do you think?</p>
+                <form method="post" action="https://poll.pollcode.com/55935374" target="_blank"><div style="padding:2px;width:100%;font-family:Arial;font-size:small;color:#000000;">
+                    <div style="padding:2px 0px 4px 2px;"><strong>Was Zoe able to balance an egg on a nail at the Equator?</strong>
+                    </div><input type="radio" name="answer" value="1" id="answer559353741" style="float:left;" /><label for="answer559353741" style="float:left;width:150px;">Yes</label><div style="clear:both;height:2px;"></div>
+                    <input type="radio" name="answer" value="2" id="answer559353742" style="float:left;" />
+                    <label for="answer559353742" style="float:left;width:150px;">No</label>
+                    <div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote ">&nbsp;<input type="submit" name="view" value=" View "></div>
+                    <div align="right" style="font-size:10px"></div></div></form>
+                <!-- Photo Grid -->
+                <div class="center row">
+                    <div class="columnpix4">
+                        <img src="img/q%20city1.png" class="img-responsive" style="width:100%">
+                        <img src="img/q%20city2.png" class="img-responsive" style="width:100%">
+                        <img src="img/q%20tour14.png" class="img-responsive" style="width:100%">
+                        <img src="img/q%20tour4.png" class="img-responsive" style="width:100%">
+                        <img src="img/q%20tour1.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/q%20tour10.png" style="width:100%">
+                        <img src="img/q%20tour5.png" style="width:100%">
+                        <img src="img/q%20tour8.png" style="width:100%">
+                        <img src="img/q%20tour12.png" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/q%20tour3.png" style="width:100%">
+                        <img src="img/q%20tour7.png" style="width:100%">
+                        <img src="img/q%20tour2.png" style="width:100%">
+                        <img src="img/q%20tour13.png" style="width:100%">
+                        <img src="img/q%20tour6.png" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/q%20equator1.png" style="width:100%">
+                        <img src="img/q%20equator2.png" style="width:100%">
+                        <img src="img/q%20equator3.png" style="width:100%">
+                        <img src="img/q%20tour11.png" style="width:100%">
+                    </div>
+                </div>
+                <p></p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video autoplay loop class="embed-responsive-item">
+                        <source src=assets/equator.mp4 type="video/mp4">
+                    </video>
+                </div>
+                <small>12/21/2017</small>
+            </section>
+
+			<section data-scene="flight1">
+				<h2>¡Vamos a los Galápagos!</h2>
+                <p>An indirect flight brought us 1000km off the coast of Ecuador, to the Galápagos Islands.  An archipelago of volcanic islands splitting the Equator,
+                the islands are best known for their vast number of endemic species, which were studied by Charles Darwin during his voyage of the HMS Beagle and contributed to his inception of the theory of evolution by means of natural selection.</p>
+                <i class="fa fa-plane animated bounceInRight infinite" style="animation-delay: 1s;
+                animation-duration: 2s; animation-timing-function: ease-in-out;
+                animation-direction: alternate; color: #040073; font-size: 2em;"></i>
+                <img src="img/plane.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="plane ride">
+                <p></p>
+                <p>We boarded the only home we would know for the next 6 days; complete with seafood buffets, animal towel folds,
+                    contraband cocktails at sunset in the Jacuzzi... a haven of entitled luxury amidst a remote, desolate, boobie-shit-encrusted
+                    atoll.</p>
+                <p>She was called <strong><a href="https://www.haugancruises.com/petrel-galapagos-cruise/index.html" target="_blank"> The Petrel</a></strong>.</p>
+                <img src="img/petrel1.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="petrel1">
+                <img src="img/petrel2.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="petrel2">
+                <img src="img/petrel3.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="petrel3">
+                <img src="img/petrel4.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="petrel4">
+                <p></p>
+                <p>Akin to its namesake (a seabird), the ship was <i>elegant, swift</i> and <i>silent at sea</i>.</p>
+				<small>Or at least, that's what the itinerary would have you believe...</small>
+			</section>
+
+            <section data-scene="tourpath">
+                <h2>Charting New Waters</h2>
+                <h4>Yachting Tour Route</h4>
+                <img src="img/path2.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="globe">
+                <img src="img/path1.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="petrel5">
+            </section>
+
+			<section data-scene="day1">
+                <h2>Day 1</h2>
+                <h4>Balta Island & North Seymour Island </h4>
+				<p>Within minutes of departing our plane on Balta Island, we saw our first seal, which we would never quite
+                    learn how to pronounce correctly ("sea lion").  Waiting for us to finish our selfies with the vagabond creature passed out on the bench,
+                    our naturalist guide shook her head and sighed with the wisdom of someone with decades of experience having her seat taken by one.  We could not even imagine our own naïveté.</p>
+                <img src="img/d1seal.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="petrel4">
+                <p></p>
+                <p>A short sail north landed us on the rocky coast of nearby North Seymour Island.  A lovely afternoon consisted of visually hunting
+                    colonies of frigatebirds, blue-footed boobies, land-iguanas, and playing dead in the face of attacking baby sealions.</p>
+                <div class="center row">
+                    <div class="columnpix2">
+                        <img src="img/d1a.png" class="img-responsive" style="width:100%">
+                        <img src="img/d1b.png" class="img-responsive" style="width:100%">
+                        <img src="img/d1c.png" class="img-responsive" style="width:100%">
+                        <img src="img/d1d.png" class="img-responsive" style="width:100%">
+                        <img src="img/d1e.png" class="img-responsive" style="width:100%">
+                        <img src="img/d1f.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix2">
+                        <img src="img/d1g.png" class="img-responsive" style="width:100%">
+                        <img src="img/d1h.png" class="img-responsive" style="width:100%">
+                        <img src="img/d1i.png" class="img-responsive" style="width:100%">
+                        <img src="img/d1j.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <small>12/22/2017</small>
+			</section>
+
+			<section data-scene="overnight1">
+				<h2>Rocky Seas...</h2>
+				<p>Our first night at sea, crossing the Equator (apparently a big deal if by boat), around the head of the "seahorse" of Isabela Island.</p>
+                <p>Sailing the open waters of the Pacific, the catamaran rocked so much it felt it could tip over (as the Christmas tree could attest).</p>
+                <img src="img/overnight1.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="petrel4">
+                <p></p>
+                <p>A rough night, with little sleep (despite no lack of scotch)...  Nevertheless, rather onboard than with the fishes!</p>
+                <img src="img/overnight2.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="petrel4">
+			</section>
+			<section data-scene="day2morn">
+                <h2>Day 2 Morning</h2>
+                <h4>Vicente Roca Point, Tagus Cove, Isabela Island</h4>
+                <p>Perhaps as a result of the rocky night, a <strong>Day-2 Dad Meltdown</strong> was accurately predicted <i>(Vegas 2:1 odds)</i>, despite his best attempts to have a pleasant, relaxing Birthday.</p>
+                <img src="img/d2a.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="dad">
+                <p></p>
+				<p>Morning allowed a wildlife safari from dingies, where we saw Fur Seals, Blue Whales breaching, and a Mola Mola (moon fish).  This was followed by snorkeling, then back on-deck for a seafood bbq, birthday beers, and naps.</p>
+                <div class="center row">
+                    <div class="columnpix2">
+                        <img src="img/d2b.png" class="img-responsive" style="width:100%">
+                        <img src="img/d2c.png" class="img-responsive" style="width:100%">
+                        <img src="img/d2d.png" class="img-responsive" style="width:100%">
+                        <img src="img/d2e.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix2">
+                        <img src="img/d2g.png" class="img-responsive" style="width:100%">
+                        <img src="img/d2f.png" class="img-responsive" style="width:100%">
+                        <img src="img/d2h.png" class="img-responsive" style="width:100%">
+                        <img src="img/d2i.png" class="img-responsive" style="width:100%">
+                        <img src="img/d2j.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <small>12/23/2017</small>
+			</section>
+
+            <section data-scene="day2aft">
+                <h2>Day 2 Afternoon</h2>
+                <h4>Espinosa Point, Fernandina Island</h4>
+                <p>A 2-hr cruise down to Fernandina Island provided an opportunity for a long walk across ʻaʻā lava,
+                where we witnessed crabs, a whale skeleton, a boisterous bull sea lion ousted by a young buck, and IGUANA HELL!</p>
+
+                <div class="center row">
+                    <div class="columnpix4">
+                        <img src="img/d22a.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22b.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22c.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22d.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22e.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d22f.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22g.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22h.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22i.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22j.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d22k.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22l.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22m.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22n.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22o.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d22p.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22q.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22r.png" class="img-responsive" style="width:100%">
+                        <img src="img/d22s.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <small>12/23/2017</small>
+            </section>
+
+			<section data-scene="day3">
+                <h2>Day 3</h2>
+                <h4>Tagus Cove, Urbina Bay</h4>
+				<p>An inland hike around Tagus Cove (long a stopping grounds for pirates and thirsty seafarers) was followed
+                by a raft safari to see our first penguins!</p>
+                <div class="center row">
+                    <div class="columnpix2">
+                        <img src="img/d3a.png" class="img-responsive" style="width:100%">
+                        <img src="img/d3b.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix2">
+                        <img src="img/d3c.png" class="img-responsive" style="width:100%">
+                        <img src="img/d3d.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <p></p>
+                <p>We snorkeled with cormorants, sea lions, and penguins in a beautiful reef.  But don't let these tropical islands fool you... if you're swimming with penguins, the water's not likely to be warm!</p>
+                <p>A long dip in the hot-tub afterwards was appreciated by all.</p>
+                <img src="img/d3e.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="jacuzzi">
+                <p></p>
+                <p>During an afternoon hike of Urbina Bay, we discovered the business end of a tortoise, and tried out an all-natural hair gel (not what you think!)</p>
+                <div class="center row">
+                    <div class="columnpix4">
+                        <img src="img/d3f.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d3g.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d3h.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d3i.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <p></p>
+                <p>At night, the staff served a festive Christmas dinner, and joined us in celebrations.</p>
+                <img src="img/d3j.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="diningroom">
+                <img src="img/d3k.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="pig">
+                <small>12/24/2017</small>
+			</section>
+
+			<section data-scene="day4">
+                <h2>Day 4</h2>
+                <h4>Elizabeth Bay & Moreno Point</h4>
+				<p>A morning rafting trip through a peaceful mangrove was perfect for spotting golden rays and eagle rays, sea turtles (some mating), pelicans, and the elusive tree lion!</p>
+                <div class="center row">
+                    <div class="columnpix2">
+                        <img src="img/d4a.png" class="img-responsive" style="width:100%">
+                        <img src="img/d4b.png" class="img-responsive" style="width:100%">
+                        <img src="img/d4c.png" class="img-responsive" style="width:100%">
+                        <img src="img/d4d.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix2">
+                        <img src="img/d4e.png" class="img-responsive" style="width:100%">
+                        <img src="img/d4f.png" class="img-responsive" style="width:100%">
+                        <img src="img/d4g.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <p></p>
+				<p>In the afternoon, a long walk across a pahoehoe lava field allowed us to imagine how life began to colonize these barren islands many eons ago.</p>
+                <div class="center row">
+                    <div class="columnpix4">
+                        <img src="img/d4h.png" class="img-responsive" style="width:100%">
+                        <img src="img/d4j.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d4i.png" class="img-responsive" style="width:100%">
+                        <img src="img/d4k.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d4l.png" class="img-responsive" style="width:100%">
+                        <img src="img/d4m.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d4n.png" class="img-responsive" style="width:100%">
+                        <img src="img/d4o.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <p></p>
+                <p>On the way back to the ship, we came across a rock outcrop that had just about every Galapagan animal you could ever shake a stick at (but not really, because that's illegal).</p>
+                <img src="img/d4p.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="rock1">
+                <img src="img/d4q.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="rock2">
+                <small>12/25/2017</small>
+			</section>
+			<section data-scene="day5">
+                <h2><span style="font-family: Pacifico; background-color: #fff4be;">Day ..?</span></h2>
+                <h4><span STYLE="font-family: Dancing Script; background-color: #fff4be">Somewhere in the Pacific Ocean</span></h4>
+				<p><span STYLE="font-family: Dancing Script; font-size: 20px; background-color: #fff4be">Our wayward vessel drifts onward.. no sign of intelligent life... beating hot sun...
+                    3rd day of octopus and rice... wondering if our fate shall follow that of the dodo...
+                    sea lions haunt our thoughts, even while rest is attempted on an unremittingly rocking ship.  It's all enough to make you sick.. in fact, it did, for Max,
+                    who spent the day losing his lunch in a random island village, fighting pesky sealions for public benches, while the rest of the family visited a tortoise center.</span></p>
+                <div class="center row">
+                    <div class="columnpix4">
+                        <img src="img/d5f.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d5g.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d5h.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d5i.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <img src="img/d5j.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="family">
+                <p></p>
+                <p><span STYLE="font-family: Dancing Script; font-size: large; background-color: #fff4be">A hike also brought us to Sierra Negra Volcano, the largest caldera of all the Isabela volcanos.</span></p>
+                <img src="img/d5a.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="volcano">
+                <div class="center row">
+                    <div class="columnpix4">
+                        <img src="img/d5b.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d5c.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d5d.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d5e.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <small>12/26/2017</small>
+			</section>
+			<section data-scene="flight2">
+				<h2>Galapa-going home!</h2>
+                <p>The sea-lion-infested <i>Puerto Villamil</i> was enough to make us want to give up island life and head back to civilization.</p>
+                <img src="img/d6a.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="flightback">
+                <i class="fa fa-plane animated bounceInRight infinite" style="animation-delay: 1s;
+                animation-duration: 2s; animation-timing-function: ease-in-out;
+                animation-direction: alternate; color: #ff006e; font-size: 2em;"></i>
+			</section>
+            <section data-scene="quito2">
+                <h2>Quito, Again</h2>
+                <p>1 night layover at an enchanted hotel in Quito.</p>
+                <img src="img/d6b.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="hotel2">
+                <p></p>
+                <p>A sad farewell to the homeward-bound parents, but not without some sentimental departing gifts!</p>
+                <img src="img/d6c.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="gifts">
+                <p></p>
+                <small>1 night at the <a href="http://hotelcasatababela.com/ht/" target="_blank">Casa d'Campo Boutique Hotel Tababela</a></small>
+                <small>12/27/2017</small>
+            </section>
+			<section data-scene="flight3">
+				<h2>A la Colombia!!</h2>
+				<h4>Quito <i class="fa fa-arrow-circle-right"></i> Cartegena</h4>
+                <img src="img/d7a.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="flight3">
+                <i class="fa fa-plane animated bounceInRight infinite" style="animation-delay: 1s;
+                animation-duration: 2s; animation-timing-function: ease-in-out;
+                animation-direction: alternate; color: #ffa500; font-size: 2em;"></i>
+			</section>
+			<section data-scene="cart1">
+				<h2>Cartegena</h2>
+                <h4>(Sans parental supervision)</h4>
+				<p>Heatstroke by day, "hydrating" by night, beer-&-laundry, and long romantic evening walks with a gentleman escort to the only
+                    person in the city with the spare keys to our self-locked-out apartment.</p>
+                <div class="center row">
+                    <div class="columnpix2">
+                        <img src="img/d7c.png" class="img-responsive" style="width:100%">
+                        <img src="img/d7d.png" class="img-responsive" style="width:100%">
+                        <img src="img/d7e.png" class="img-responsive" style="width:100%">
+                        <img src="img/d7f.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix2">
+                        <img src="img/d7g.png" class="img-responsive" style="width:100%">
+                        <img src="img/d7h.png" class="img-responsive" style="width:100%">
+                        <img src="img/d7b.png" class="img-responsive" style="width:100%">
+                        <img src="img/d7i.png" class="img-responsive" style="width:100%">
+                        <img src="img/d7j.png" class="img-responsive" style="width:100%">
+                        <img src="img/d7k.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <small>12/28-30/2017</small>
+			</section>
+			<section data-scene="nye">
+				<h2><i class="fa fa-beer animated pulse infinite"></i> New Years Eve! <i class="fa fa-glass-martini animated pulse infinite"></i></h2>
+				<p>Street meat, road sodas, declined ski trips, and fireworks to bring in 2018.</p>
+                <div class="center row">
+                    <div class="columnpix2">
+                        <img src="img/d8a.png" class="img-responsive" style="width:100%">
+                        <img src="img/d8b.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix2">
+                        <img src="img/d8c.png" class="img-responsive" style="width:100%">
+                        <img src="img/d8d.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+				<p></p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <video autoplay loop class="embed-responsive-item">
+                        <source src=assets/dancing.mp4 type="video/mp4">
+                    </video>
+                </div>
+                <small>12/31/2017 - 01/01/2018!!!</small>
+			</section>
+			<section data-scene="flight4">
+                <h2>Max Fly to Medellin</h2>
+                <h4>(Alex, P, & ZoBo <i class="fa fa-arrow-circle-right"></i> HOME!)</h4>
+                <i class="fa fa-plane animated bounceInRight infinite" style="animation-delay: 1s;
+                animation-duration: 2s; animation-timing-function: ease-in-out;
+                animation-direction: alternate; color: #5aec3a; font-size: 2em;"></i>
+                <p></p>
+				<small>And then there was one...</small>
+				<p>The (arguably) least-entrusted member of the original traveling party was left alone, unrestrained, for an additional 4 days in a developing Latin American Country...</p>
+                <img src="img/d9a.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="flight4">
+			</section>
+            <section data-scene="medellin">
+                <h2>Medellín</h2>
+                <p>Directing taxi drivers with broken (and irreparable) Español... a private city tour... and a rainforest hike with locals to a nearby waterfall.</p>
+                <img src="img/d10a.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="med1">
+                <div class="center row">
+                    <div class="columnpix4">
+                        <img src="img/d10b.png" class="img-responsive" style="width:100%">
+                        <img src="img/d10c.png" class="img-responsive" style="width:100%">
+                        <img src="img/d10d.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d10e.png" class="img-responsive" style="width:100%">
+                        <img src="img/d10f.png" class="img-responsive" style="width:100%">
+                        <img src="img/d10ff.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d10g.png" class="img-responsive" style="width:100%">
+                        <img src="img/d10h.png" class="img-responsive" style="width:100%">
+                        <img src="img/d10i.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d10j.png" class="img-responsive" style="width:100%">
+                        <img src="img/d10k.png" class="img-responsive" style="width:100%">
+                        <img src="img/d10l.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <img src="img/d10m.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="med2">
+                <small>01/02/2018</small>
+            </section>
+			<section data-scene="guatape">
+				<h2>Guatapé</h2>
+                <p>A 3 hour drive (each way) to some rock in the middle of nowhere, that then took 2 hours to climb 20 flights of stairs to the top because of holiday tourists.</p>
+                <p>值不值?  Probably 值得.</p>
+                <img src="img/d11a.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="guat1">
+                <div class="center row">
+                    <div class="columnpix4">
+                        <img src="img/d11c.png" class="img-responsive" style="width:100%">
+                        <img src="img/d11h.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d11e.png" class="img-responsive" style="width:100%">
+                        <img src="img/d11f.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d11d.png" class="img-responsive" style="width:100%">
+                        <img src="img/d11g.png" class="img-responsive" style="width:100%">
+                    </div>
+                    <div class="columnpix4">
+                        <img src="img/d11i.png" class="img-responsive" style="width:100%">
+                        <img src="img/d11j.png" class="img-responsive" style="width:100%">
+                    </div>
+                </div>
+                <img src="img/d11k.png" class="img-responsive img-thumbnail" alt="responsive image"
+                     alt-text="guat2">
+                <small>01/03/2018</small>
+			</section>
+
+			<section data-scene="end" data-background="assets/end.mp4">
+				<div class="fullscreen text-center">
+					<h1 class="display-4 d-flex justify-content-center">THAT'S IT!  Thanks for watching!!!</h1>
+					<small class="d-flex justify-content-center animated pulse infinite" style="color: rgba(255,255,255,0.95)">And thank you parents for a great trip :)
+					</small>
+				</div>
+			</section>
+
+		</div>
+		<!--map div-->
+		<div class="col-sm-6 col-md-8 storymap-map"></div>
+	</div>
+
+	<dl>
+		<dt>
+			<!--facebook icon-->
+			<a class="fab fa-facebook-square btn"
+			   href="https://facebook.com/sharer.php?u=https://github.com/maxxyb33/galapagos"
+			   target="_blank"></a>
+		</dt>
+		<dt>
+			<!--github icon-->
+			<a class="fab fa-github btn" href="https://github.com/maxxyb33/galapagos" style="top:40px"
+			   target="_blank"></a>
+		</dt>
+		<dt>
+			<!--info icon-->
+			<i class="fas fa-info-circle btn" style="top:60px" data-toggle="modal" data-target="#info-modal"></i>
+		</dt>
+	</dl>
+
+	<!--the info page-->
+	<div class="modal fade" id="info-modal" role="dialog">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">About</h4>
+				</div>
+				<div class="modal-body">
+					<p>This is a story map of the Boath's family trip to Ecuador and Galapagos Islands in the Winter of 2017-2018, made with
+                    Bootstrap and Leaflet.</p>
+                    <p>This story map uses geospatial data from mapbox, Google Earth Engine, ESRI Map, Open Street Maps,
+                    and Oregon Explorer.</p>
+                    <p>Created by <b>Max Boath</b> | Oregon State University | Released Date: 05/24/2018</p>
+					<p>Some text was ripped from Wikipedia, as well as the tour itinerary from Eco Adventures (via Diane Arnold, Nexion, Inc.)</p>
+					<p>See also Max's <a href="https://maxxyb33.github.io/USAirports/" target="_blank">Map of US Airports</a> created for the same web-mapping class. </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- main javascript -->
+<script type="text/javascript">
+
+
+	// Create Legend Contents in html format
+	var county_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Counties</b></p>';
+	var forest_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Forest</b></p>';
+
+	// For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
+	//  var layers = {
+	//       layer1: {layer: layer1, legend: legend1},
+	//       layer2: {layer: layer2, legend: legend2}
+	// //      ...
+	//  }
+
+	var layers = {
+		ESRI: {layer: L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')},
+		// counties: {
+		// 	layer: L.geoJson.ajax('assets/counties.geojson', {
+		// 		color: 'orange',
+		// 		weight: 2,
+		// 		opacity: 0.3
+		// 	}), legend: county_legend
+		// },
+		// GEE: {
+		// 	layer: L.tileLayer('http://earthengine.google.org/static/hansen_2013/tree_alpha/{z}/{x}/{y}.png'),
+		// 	legend: forest_legend
+		// },
+        topo: {
+		    layer: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png'),
+        },
+		darkmap: {
+		    layer: L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'),
+		},
+		satellite: {
+			layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
+				id: 'mapbox.satellite'
+			})
+		},
+        watercolor: {
+		    layer: L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png'),
+        },
+        toner: {
+            layer: L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'),
+        },
+        pioneer: {
+            layer: L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=d2dc16bceac84466b9a606b33b6efa6c'),
+        },
+        transdark: {
+            layer: L.tileLayer('https://{s}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png?apikey=d2dc16bceac84466b9a606b33b6efa6c'),
+        },
+        baseMap: {layer: L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'),
+        },
+        qstar: {
+            layer: L.geoJson.ajax("assets/qstar.geojson", {
+            color: "#ec3711",
+            weight: "large",
+            symbol: "city"
+        }),
+		},
+        arrow1: {
+		    layer: L.geoJson.ajax("assets/arrow1.geoJson"),
+        },
+        arrow2: {
+            layer: L.geoJson.ajax("assets/arrow2.geoJson"),
+        },
+        arrow3: {
+            layer: L.geoJson.ajax("assets/arrow3.geoJson"),
+        },
+        arrow4: {
+            layer: L.geoJson.ajax("assets/arrow4.geoJson"),
+        },
+        arrow5: {
+            layer: L.geoJson.ajax("assets/arrow5.geoJson"),
+        },
+        arrow6: {
+            layer: L.geoJson.ajax("assets/arrow6.geoJson"),
+        },
+        arrow7: {
+            layer: L.geoJson.ajax("assets/arrow7.geoJson"),
+        },
+        arrow8: {
+            layer: L.geoJson.ajax("assets/arrow8.geoJson"),
+        },
+        arrow9: {
+            layer: L.geoJson.ajax("assets/arrow9.geoJson"),
+        },
+        arrow10: {
+            layer: L.geoJson.ajax("assets/arrow10.geoJson"),
+        },
+        gstar: {
+            layer: L.geoJson.ajax("assets/gstar.geoJson"),
+        },
+        nightpath: {
+            layer: L.geoJson.ajax("assets/nightpath.geoJson"),
+        }
+	};
+
+	var scenes = {
+		overview: {lat: 40.032651, lng: -75.378623, zoom: 7, name: 'Cover Page', layers: []},
+		quito: {lat: -0.218484, lng: -78.511239, zoom: 8, name: 'Quito', layers: [layers.topo, layers.qstar]},
+        quitotour: {lat: -0.218484, lng: -78.511239, zoom: 12, name: 'Quito', layers: [layers.topo]},
+		flight1: {lat: -0.767534, lng:  -88.946427, zoom: 7, name: 'Flight1', layers: [layers.watercolor, layers.arrow1]},
+        tourpath: {lat: -0.396236, lng: -91.503034, zoom: 9, name: 'tour route', layers: [layers.transdark, layers.arrow2, layers.arrow3, layers.arrow4, layers.arrow5, layers.arrow6, layers.arrow7, layers.gstar]},
+        day1: {lat: -0.396236, lng: -90.289034, zoom: 16, name: 'day1', layers: [layers.ESRI]},
+        overnight1: {lat: 0.006025, lng: -91.298827, zoom: 9, name: 'overnight1', layers: [layers.darkmap, layers.nightpath]},
+		day2morn: {lat: -0.054497, lng: -91.554324, zoom: 13, name: 'day2morn', layers: [layers.ESRI]},
+        day2aft: {lat: -0.274201, lng: -91.463007, zoom: 12, name: 'day2aft', layers: [layers.ESRI, layers.arrow3]},
+        day3: {lat: -0.306975, lng: -91.319745, zoom: 12, name: 'day3', layers: [layers.satellite]},
+        day4: {lat: -0.610190, lng: -91.147991, zoom: 11, name: 'day4', layers: [layers.ESRI, layers.arrow5]},
+        day5: {lat: -0.824406, lng: -91.155467, zoom: 14, name: 'day5', layers: [layers.ESRI]},
+        flight2: {lat: -1.767534, lng:  -87.646427, zoom: 6, name: 'flight2', layers: [layers.watercolor, layers.arrow8]},
+        quito2: {lat: -0.199595, lng: -78.335638, zoom: 14, name: 'quito2', layers: [layers.pioneer]},
+        flight3: {lat: 6.187094, lng:  -78.001357, zoom: 6, name: 'flight3', layers: [layers.ESRI, layers.arrow9]},
+        cart1: {lat: 10.429252, lng: -75.535416, zoom: 12, name: 'cart1', layers: [layers.toner]},
+		nye: {lat: 10.424664, lng: -75.550960, zoom: 18, name: 'nye', layers: [layers.ESRI]},
+        flight4: {lat: 8.341940, lng: -75.731351, zoom: 8, name: 'flight4', layers: [layers.transdark, layers.arrow10]},
+        medellin: {lat: 6.217381, lng: -75.598637, zoom: 13, name: 'medellin', layers: [layers.ESRI]},
+        guatape: {lat: 6.265242, lng: -75.165279, zoom: 15, name: 'guatape', layers: [layers.ESRI]},
+		end: {lat: 6.265242, lng: -75.165279, zoom: 7, name: 'The End'}
+	};
+
+	$('#storymap').storymap({
+		scenes: scenes,
+		baselayer: layers.baseMap,
+		legend: true, // if you do not want a legend feature, you can simply not define the createLegend function.
+		credits: "",
+		loader: true,
+		scalebar: false,
+		flyto: true,
+		navwidget: true,
+
+		createMap: function () {
+			// create a map in the "map" div, set the view to a given place and zoom
+			var map = L.map($(".storymap-map")[0], {
+				zoomControl: false, scrollWheelZoom: false, fadeAnimation: true,
+				zoomAnimation: true
+			}).setView([44, -120], 7);
+
+			return map;
+		}
+	});
+
+
+</script>
+</body>
+</html>
