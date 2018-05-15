@@ -628,29 +628,29 @@
 		// 	legend: forest_legend
 		// },
         topo: {
-		    layer: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png'),
+		    layer: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}@2x.png'),
         },
 		darkmap: {
-		    layer: L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'),
+		    layer: L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png'),
 		},
 		satellite: {
-			layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
+			layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}@2x.png?access_token=pk.eyJ1IjoiamFrb2J6aGFvIiwiYSI6ImNpcms2YWsyMzAwMmtmbG5icTFxZ3ZkdncifQ.P9MBej1xacybKcDN_jehvw', {
 				id: 'mapbox.satellite'
 			})
 		},
         watercolor: {
-		    layer: L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png'),
+		    layer: L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}@2x.png'),
         },
         toner: {
-            layer: L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png'),
+            layer: L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}@2x.png'),
         },
         pioneer: {
-            layer: L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=d2dc16bceac84466b9a606b33b6efa6c'),
+            layer: L.tileLayer('https://{s}.tile.thunderforest.com/pioneer/{z}/{x}/{y}@2x.png?apikey=d2dc16bceac84466b9a606b33b6efa6c'),
         },
         transdark: {
-            layer: L.tileLayer('https://{s}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}.png?apikey=d2dc16bceac84466b9a606b33b6efa6c'),
+            layer: L.tileLayer('https://{s}.tile.thunderforest.com/transport-dark/{z}/{x}/{y}@2x.png?apikey=d2dc16bceac84466b9a606b33b6efa6c'),
         },
-        baseMap: {layer: L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'),
+        baseMap: {layer: L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png'),
         },
         qstar: {
             layer: L.geoJson.ajax("assets/qstar.geojson", {
